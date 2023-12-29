@@ -6,8 +6,10 @@ function insertAtCursor(text) {
         input.value = input.value.substring(0, startPos)
             + text
             + input.value.substring(endPos, input.value.length);
+        console.log('replace selection');
     } else {
         input.value += text;
+        console.log('add to end');
     }
 }
 
